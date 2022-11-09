@@ -1,0 +1,363 @@
+.container
+    padding-right: 0px 
+    padding-left: 0px
+    max-width: 1680px
+
+.case
+    height: 1009px
+    background-color: #000000
+    &__title
+        margin: 24px auto 40px
+    &__button
+        padding: 9px 32px
+        border: 2px solid #FFFFFF
+        border-radius: 10px
+        width: max-content
+        font-family: 'OpenSans_Bold'
+        font-weight: 700
+        font-size: 20px
+        line-height: 130%
+        display: flex
+        align-items: center
+        text-align: center
+        text-transform: uppercase
+        margin: 40px auto 0px
+        /* Primary / White */
+
+        color: #FFFFFF
+    &__box
+        // grid-gap: 24px
+        &_mobile_text
+            display: none
+        &_text
+            font-family: 'OpenSans-Regular', sans-serif
+            font-weight: 400
+            font-size: 20px
+            line-height: 130%
+            max-width: 386px
+            color: #F2F2F2
+            margin-top: 48px
+        &_content
+            position: absolute
+            bottom: 0px
+        &_distance
+            margin-bottom: 24px
+        &_button
+            font-family: 'OpenSans-Bold'
+            font-weight: 700
+            font-size: 20px
+            line-height: 130%
+            text-transform: uppercase
+            color: #00A3E1
+            margin: 48px 0px
+            cursor: pointer
+            &:hover::after 
+                content: ">>"
+                padding: 0px 2px
+                right: 20px
+                top: 8px
+                z-index: 1
+                text-align: center
+                width: 10%
+                height: 100%
+                pointer-events: none
+            
+        &-first
+            background: url("../img/image1.png") no-repeat
+            height: 760px
+            border-radius: 14px
+            position: relative
+            cursor: pointer
+            padding: 0 24px
+        &-second
+            background: url("../img/image2.png") no-repeat
+            height: 760px
+            border-radius: 14px
+            position: relative
+            cursor: pointer
+            padding: 0 24px
+        &-third
+            background: url("../img/image3.png") no-repeat
+            height: 760px
+            border-radius: 14px
+            position: relative
+            cursor: pointer
+            padding: 0 24px
+
+.featured
+    height: 755px
+    background-color: #000000
+    margin-bottom: 24px
+    height: max-content
+    &__title
+        margin: 24px auto 40px
+    &__button
+        padding: 9px 32px
+        border: 2px solid #FFFFFF
+        border-radius: 10px
+        width: max-content
+        font-family: 'OpenSans_Bold'
+        font-weight: 700
+        font-size: 20px
+        line-height: 130%
+        display: flex
+        align-items: center
+        text-align: center
+        text-transform: uppercase
+        margin: 40px auto 0px
+        /* Primary / White */
+
+        color: #FFFFFF
+    &__box
+        
+        // grid-gap: 24px
+        &_text
+            font-family: 'OpenSans-Regular', sans-serif
+            font-weight: 400
+            font-size: 20px
+            line-height: 130%
+            max-width: 386px
+            color: #F2F2F2
+            margin-top: 48px
+        &_content
+            position: absolute
+            bottom: 0px
+        &_distance
+            margin-bottom: 24px
+        &_button
+            font-family: 'OpenSans-Bold'
+            font-weight: 700
+            font-size: 20px
+            line-height: 130%
+            text-transform: uppercase
+            color: #00A3E1
+            margin: 48px 0px
+            cursor: pointer
+            &:hover::after 
+                content: ">>"
+                padding: 0px 2px
+                right: 20px
+                top: 8px
+                z-index: 1
+                text-align: center
+                width: 10%
+                height: 100%
+                pointer-events: none
+            
+        &-first
+            background: url("../img/image5.png") no-repeat
+            height: 600px
+            border-radius: 14px
+            position: relative
+            cursor: pointer
+            padding: 0 24px
+        &-second
+            background: url("../img/image2.png") no-repeat
+            height: 760px
+            border-radius: 14px
+            position: relative
+            cursor: pointer
+            padding: 0 24px
+        &-third
+            background: url("../img/image3.png") no-repeat
+            height: 760px
+            border-radius: 14px
+            position: relative
+            cursor: pointer
+            padding: 0 24px
+        &-fourth
+            background: url("../img/image6.png") no-repeat
+            height: 600px
+            border-radius: 14px
+            position: relative
+            cursor: pointer
+            padding: 0 32px
+        
+.hide
+    display: none 
+
+.show
+    display: block 
+
+.hiden
+    display: none  !important
+
+.showen
+    display: block !important
+    
+.hides
+    display: none  !important
+
+.showes
+    display: block !important
+.heighten
+    height: 360px !important
+
+.move
+    width: 1112px
+    height: 760px
+
+
+@media (max-width: 375px)
+    .container
+        max-width: 328px
+        padding-left: 16px
+        padding-right: 16px
+    .featured
+        height: max-content
+        padding-bottom: 16px
+        &__mobile
+            display: none
+        &__title
+            margin: 24px auto
+        &__box
+            grid-gap: 16px
+            &-first
+                height: 120px
+            &-second
+                height: 120px
+            &_distance
+                margin-bottom: 126px
+    .case
+        height: max-content
+        padding-bottom: 16px
+        &__button
+            font-size: 16px
+            line-height: 130%
+            padding: 9px 32px
+            margin: 16px 0px 0px
+        &__box
+            grid-gap: 16px
+        &__mobile
+            display: none
+            &_plus 
+                cursor: pointer
+                position: absolute
+                right: 30px
+                top: 54px
+                display: inline-block
+                width: 12px
+                height: 12px
+                background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff), #fff
+                background-position: center
+                background-size: 50% 1px,1px 50%
+                background-repeat: no-repeat
+                background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff)
+                background-position: center
+                background-size: 100% 2px,2px 100%
+                background-repeat: no-repeat
+            &_alt
+                background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff)
+                background-position: center
+                background-size: 100% 2px,2px 100%
+                background-repeat: no-repeat
+            &_minus 
+                background-size: 100% 2px,0px 100%
+                top: 36px
+        &__title
+            margin: 24px auto
+        &__box
+            &_mobile
+                &_text
+                    display: inline-block
+                    font-family: 'OpenSans-Bold'
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 130%
+                    position: absolute
+                    bottom: 24px
+                    color: #FFFFFF
+            &-first
+                height: 120px
+            &-second
+                height: 120px
+            &-third
+                height: 120px
+            &_distance
+                margin-bottom: 126px
+                display: inline-block
+            &_button
+                margin: 32px 0px 24px
+
+    
+
+
+    
+
+
+
+
+.highlight
+    height: 360px
+    display: block !important
+
+.wrap 
+    width: 10000px
+    height: 1000px
+    backgroun-color: #34648a
+
+.block 
+    // width: 737px
+    // height: 600px
+    margin: 10px
+    background-color: gray
+    transition: 1s
+
+.biggest 
+    width: 450px!important
+    height: 450px!important
+
+.more 
+    display: none
+
+.float 
+    height: 110px
+    background: url("../img/image1.png") no-repeat
+    width: 554px
+    margin: 5px
+    float: left
+        
+.size 
+    background: url("../img/image1-big.png") no-repeat
+    width: 1112px
+    height: 760px
+
+.small
+    width: 100px
+    
+    background: url("../img/image1-big.png") no-repeat
+
+.cl_img
+    width: 760px !important
+    height: 1112px 
+
+
+
+.smaller
+    height: 300px
+
+.my
+    position: absolute
+    height: 700px
+
+.height
+    height: 360px
+    
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
