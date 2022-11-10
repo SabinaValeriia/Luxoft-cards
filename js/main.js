@@ -46,25 +46,39 @@
 
 
 $('.case__box_button, .hide').click(function(){
-
+   
     var $td = $(this);
     if($(this).hasClass('case__box_button')){
         var target =  $(this).data('target');
         $td = $("#div" + target);
+        
+        
     }
 
-    $td.toggle('.show');    
+    $td.toggle('.show');  
+    
 });
 
 $('.featured__box_button, .hide').click(function(){
-
+    
     var $td = $(this);
     if($(this).hasClass('featured__box_button')){
         var target =  $(this).data('target');
         $td = $("#div" + target);
     }
-   
+    
+    
     $td.toggle('.show');    
+});
+
+$('.featured__box_button').click(function(){
+    $(this).toggleClass('distance')
+    
+});
+
+$('.case__box_button').click(function(){
+    $(this).toggleClass('distance')
+    
 });
 
 $('.image').click(function(){

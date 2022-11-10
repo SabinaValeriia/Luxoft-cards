@@ -18,7 +18,7 @@
         border: 2px solid #FFFFFF
         border-radius: 10px
         width: max-content
-        font-family: 'OpenSans_Bold'
+        font-family: 'OpenSans-Bold', sans-serif
         font-weight: 700
         font-size: 20px
         line-height: 130%
@@ -49,7 +49,7 @@
             line-height: 130%
             max-width: 386px
             color: #F2F2F2
-            margin-top: 48px
+            margin-top: 24px
         &_content
             display: flex
             align-items: flex-end
@@ -60,7 +60,7 @@
         &_distance
             margin-bottom: 24px
         &_button
-            font-family: 'OpenSans-Bold'
+            font-family: 'OpenSans-Bold', sans-serif
             font-weight: 700
             font-size: 20px
             line-height: 130%
@@ -142,7 +142,7 @@
         border: 2px solid #FFFFFF
         border-radius: 10px
         width: max-content
-        font-family: 'OpenSans_Bold'
+        font-family: 'OpenSans_Bold', sans-serif
         font-weight: 700
         font-size: 20px
         line-height: 130%
@@ -169,7 +169,7 @@
         &_distance
             margin-bottom: 24px
         &_button
-            font-family: 'OpenSans-Bold'
+            font-family: 'OpenSans-Bold', sans-serif
             font-weight: 700
             font-size: 20px
             line-height: 130%
@@ -247,6 +247,9 @@
     .featured
         height: max-content 
         padding: 48px 0px 64px
+        &-second__box__image 
+            width: 100%
+            height: 360px
         &__box
             flex-direction: column
             
@@ -287,7 +290,7 @@
                 background: linear-gradient(206.66deg, rgba(0, 0, 0, 0) -45.37%, rgba(15, 6, 26, 0.7) 83.29%)
                 border-radius: 14px
             &_text
-                font-family: 'OpenSans-Bold'
+                font-family: 'OpenSans-Bold', sans-serif
                 font-style: normal
                 font-weight: 700
                 font-size: 20px
@@ -298,6 +301,8 @@
         &__box
             flex-direction: column
             gap: 32px
+            &_button
+                margin: 32px 0px 24px
             &_distance
                 // margin-bottom: 114px
             &__image
@@ -312,6 +317,8 @@
     .case 
         height: max-content 
         padding: 48px 0px 32px
+        &__text
+            width: 433px
         &__mobile
             display: none
             &_image
@@ -351,7 +358,7 @@
             &_text
                 display: none 
                 display: inline-block
-                font-family: 'OpenSans-Bold'
+                font-family: 'OpenSans-Bold', sans-serif
                 font-weight: 700
                 font-size: 20px
                 line-height: 130%
@@ -386,8 +393,8 @@
                 background-repeat: no-repeat
             &_minus 
                 background-size: 100% 2px,0px 100%
-                margin-top: 10px
-                margin-left: 112px
+                margin-top: 8px
+                margin-left: 153px
         &-tablet
             &-small
                 display: block
@@ -397,7 +404,7 @@
                 background: linear-gradient(206.66deg, rgba(0, 0, 0, 0) -45.37%, rgba(15, 6, 26, 0.7) 83.29%)
                 border-radius: 14px
             &_text
-                font-family: 'OpenSans-Bold'
+                font-family: 'OpenSans-Bold', sans-serif
                 font-style: normal
                 font-weight: 700
                 font-size: 20px
@@ -408,6 +415,8 @@
         &__box
             flex-direction: column
             gap: 32px
+            &_button
+                margin: 32px 0px 24px
             &_distance
                 margin-bottom: 114px
             &__image
@@ -424,7 +433,7 @@
         height: max-content
         padding: 24px 0px 16px
         &-second__box__image 
-            height: 400px
+            height: 360px
         &__mobile
             display: none
         &__title
@@ -442,6 +451,8 @@
     .case
         height: max-content
         padding: 24px 0 16px
+        &__text
+            width: 100%
         &-mobile
             display: block
             position: relative
@@ -449,9 +460,10 @@
                 // position: absolute
                 padding-left: 24px
             &_text
+                width: 300px
                 display: none 
                 display: inline-block
-                font-family: 'OpenSans-Bold'
+                font-family: 'OpenSans-Bold', sans-serif
                 font-weight: 700
                 font-size: 20px
                 line-height: 130%
@@ -461,9 +473,10 @@
         &__button
             display: block
             width: 100%
+            height: 54px
             font-size: 16px
             line-height: 130%
-            padding: 9px 32px
+            padding: 17px 32px
             margin: 16px 0px 0px
         &__box
             grid-gap: 16px
@@ -479,8 +492,8 @@
             &_plus 
                 cursor: pointer
                 position: absolute
-                right: 30px
-                top: 54px
+                right: 85px
+                top: 85px
                 display: inline-block
                 width: 12px
                 height: 12px
@@ -492,6 +505,22 @@
                 background-position: center
                 background-size: 100% 2px,2px 100%
                 background-repeat: no-repeat
+                &-mobile
+                    cursor: pointer
+                    position: absolute
+                    right: 31px
+                    top: 54px
+                    display: inline-block
+                    width: 12px
+                    height: 12px
+                    background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff), #fff
+                    background-position: center
+                    background-size: 50% 1px,1px 50%
+                    background-repeat: no-repeat
+                    background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff)
+                    background-position: center
+                    background-size: 100% 2px,2px 100%
+                    background-repeat: no-repeat
             &_alt
                 background: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff)
                 background-position: center
@@ -499,7 +528,7 @@
                 background-repeat: no-repeat
             &_minus 
                 background-size: 100% 2px,0px 100%
-                top: 9px
+                top: 5px
         &__title
             margin: 0px auto 24px
         &__box
@@ -507,7 +536,7 @@
                 &_text
                     display: none !important
                     display: inline-block
-                    font-family: 'OpenSans-Bold'
+                    font-family: 'OpenSans-Bold', sans-serif
                     font-weight: 700
                     font-size: 20px
                     line-height: 130%
@@ -526,12 +555,17 @@
             &_button
                 margin: 32px 0px 24px
 
+@media (max-width: 414px)    
+    .case__mobile_minus 
+        top: 5px
+        right: 30px
+
+
+
     
 
-
-    
-
-
+.distance
+    margin: 24px 0px 48px
 
 
 .highlight
